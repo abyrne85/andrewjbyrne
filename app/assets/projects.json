@@ -1,0 +1,9 @@
+[
+{
+	"name" 	 : "Chordinate",
+	"description": "This is an application shows a fretboard populated by all the notes in a given key.  It also highlights the fundamental intervals of a basic chord.  There is also the ability to change tunings while still showing all the notes of a scale",
+	"image"	 :  "./images/chordinate.jpg",
+	"link" : "http://andrewjbyrne/chordinate",
+	"github" : "https://github.com/abyrne85/chordinate"
+}
+]

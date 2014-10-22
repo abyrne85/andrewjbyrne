@@ -1,0 +1,54 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+//partials CSS
+@import "views/projects.scss";
+
+
+
+.header{
+  a{
+    color: #7d7f6a;
+  }
+  padding-top:65px;
+  background: #3f4035;
+  height: 120px;
+  font-size: 1.5rem;
+  .brand{
+    line-height: 1.7em;
+    cursor:pointer;
+    text-decoration: none;
+    float:left;
+    font-size: 2.5rem;
+    &:hover{
+      color: #f8f8f8;
+      -webkit-transition: color 0.5s ease-in;
+      transition: color 0.5s ease-in;
+    }
+  }
+}
+.nav{
+
+  float:right;
+  font-size: 2rem;
+  li {
+    padding: 0px 10px;
+    cursor:pointer;
+  }
+  li a {
+      display: block;
+    &:hover {
+        color: #f8f8f8;
+        -webkit-transition: color 0.2s ease-in;
+        transition: color 0.2s ease-in;
+        background-color: inherit;
+    } 
+  }
+}
+
+.maincontent{
+  margin-top:20px;
+  max-width: 800px;
+}

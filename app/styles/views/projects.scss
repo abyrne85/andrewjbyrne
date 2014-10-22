@@ -1,0 +1,19 @@
+.projects{
+	ul{
+		padding-left: 0px;
+	}
+
+	li{
+		list-style: none;
+	}
+	img{
+		opacity:1;
+		cursor:pointer;
+		&:hover{
+			opacity:0.8;
+	        -webkit-transition: opacity 0.1s ease-in;
+	        transition: opacity 0.1s ease-in;
+
+	    }
+	}
+}
