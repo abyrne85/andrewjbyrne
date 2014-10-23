@@ -1,0 +1,23 @@
+[
+	{
+		"name" 	 : "Facebook",
+		"image"	 :  "./images/facebook.svg",
+		"link" : "http://facebook.com"
+	},
+	{
+		"name" 	 : "Stackoverflow",
+		"image"	 :  "./images/stackoverflow.svg",
+		"link" : "http://stackoverflow.com"
+	},
+	{
+		"name" 	 : "Github",
+		"image"	 :  "./images/github.svg",
+		"link" : "http://github.com"
+	},
+	{
+		"name" 	 : "LinkedIn",
+		"image"	 :  "./images/linkedin.svg",
+		"link" : "http://linkedin.com"
+	}
+
+]

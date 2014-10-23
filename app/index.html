@@ -37,15 +37,15 @@
       <div class="maincontent" ng-view=""></div>
     </div>
 
-    <div class="footer">
+    <div class="footer" ng-controller="FooterCtrl">
       <div class="container">
-        <img src="images/facebook.svg" alt="facebook">
-        <img src="images/stackoverflow.svg" alt="stackoverflow">
-        <img src="images/linkedin.svg" alt="linkedin">
+        <div class="social-icons">
+          <a href="{{icon.link}}" target="blank" ng-repeat="icon in icons">
+            <img src="{{icon.image}}" alt="{{icon.name}}">
+          </a>
+        </div>
       </div>
-      
     </div>
-
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
@@ -99,6 +99,7 @@
         <script src="scripts/controllers/projects.js"></script>
         <script src="scripts/controllers/contact.js"></script>
         <script src="scripts/controllers/about.js"></script>
+        <script src="scripts/controllers/footer.js"></script>
         <!-- endbuild -->
 </body>
 </html>
