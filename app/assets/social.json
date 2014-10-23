@@ -2,22 +2,22 @@
 	{
 		"name" 	 : "Facebook",
 		"image"	 :  "./images/facebook.svg",
-		"link" : "http://facebook.com"
+		"link" : "https://www.facebook.com/andrew.byrne.982"
 	},
 	{
 		"name" 	 : "Stackoverflow",
 		"image"	 :  "./images/stackoverflow.svg",
-		"link" : "http://stackoverflow.com"
+		"link" : "http://stackoverflow.com/users/1951707/abyrne85"
 	},
 	{
 		"name" 	 : "Github",
 		"image"	 :  "./images/github.svg",
-		"link" : "http://github.com"
+		"link" : "https://github.com/abyrne85"
 	},
 	{
 		"name" 	 : "LinkedIn",
 		"image"	 :  "./images/linkedin.svg",
-		"link" : "http://linkedin.com"
+		"link" : "https://www.linkedin.com/pub/andrew-byrne/5a/495/708"
 	}
 
 ]
