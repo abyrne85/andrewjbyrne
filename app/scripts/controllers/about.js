@@ -16,9 +16,7 @@ angular.module('andrewjbyrneApp')
     ];
 
     $(document).ready(function(){
-    	Highcharts.setOptions({
-        	colors: ['#7d7f6a']
-    	});
+
 
 
  		$('#chart').highcharts({
@@ -26,23 +24,36 @@ angular.module('andrewjbyrneApp')
 	        chart: {
 	            polar: true,
 	            type: 'line',
-	            width:800,
-	            height:600,
-	            marginLeft:-200
+	            width:450,
+	            height:450,
+	            marginLeft:-20,
+	            borderColor: '#7d7f6a'
 	        },
+	        plotOptions: {
+            	series: {
+                	lineWidth:3
+           	 	}
+       		},
+
+	        colors: ['#7d7f6a'],
 
 	        title: {
 	            text: null
 	        },
 
 	        pane: {
-	            size: '85%'
+	            size: '80%'
 	        },
 
 	        xAxis: {
 	            categories: ['CSS','Javascript','HTML','Git','Flash'],
 	            tickmarkPlacement: 'off',
-	            lineWidth: 0
+	            lineWidth: 0,
+	            lineColor: 'transparent',
+	            minorGridLineWidth: 0,
+			    minorTickLength: 0,
+			    tickLength: 0,
+			    gridLineWidth : 0
 	        },
 
 	        yAxis: {
@@ -51,7 +62,12 @@ angular.module('andrewjbyrneApp')
 	            min: 0,
 	            labels:{
 	            	enabled:false
-	            }
+	            },
+			    minorGridLineWidth: 0,
+			    lineColor: 'transparent',
+			    minorTickLength: 0,
+			    tickLength: 0,
+			    tickInterval:10
 	        },
 
 	        tooltip: {
@@ -67,7 +83,7 @@ angular.module('andrewjbyrneApp')
 	        },
 
 	        series: [{
-	            name: 'Skills',
+	            name: 'Skill',
 	            data: [7, 7, 8, 6, 8],
 	            pointPlacement: 'on'
 	        }]

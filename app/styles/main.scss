@@ -5,9 +5,11 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 
 //partials CSS
 @import "views/projects.scss";
+@import "views/about.scss";
 
 
 
+//NAVIGATION
 .header{
   a{
     color: #7d7f6a;
@@ -29,7 +31,6 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
   }
 }
 .nav{
-
   float:right;
   font-size: 2rem;
   li {
@@ -46,13 +47,17 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
   }
 }
 
+
+//MAIN  CONTENT
 .maincontent{
   margin-top:20px;
+  margin-bottom:100px;
   max-width: 800px;
+  height:100%;
 }
 
 
-
+//FOOTER
 .footer{
   height:80px;
   background: #3f4035;
