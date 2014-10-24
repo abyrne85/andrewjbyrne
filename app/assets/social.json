@@ -18,6 +18,10 @@
 		"name" 	 : "LinkedIn",
 		"image"	 :  "./images/linkedin.svg",
 		"link" : "https://www.linkedin.com/pub/andrew-byrne/5a/495/708"
+	},
+	{
+		"name":"codepen",
+		"image" : "./images/codepen.svg",
+		"link":"http://codepen.io/abyrne85/"
 	}
-
 ]

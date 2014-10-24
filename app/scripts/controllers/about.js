@@ -24,8 +24,8 @@ angular.module('andrewjbyrneApp')
 	        chart: {
 	            polar: true,
 	            type: 'line',
-	            width:450,
-	            height:450,
+	            width:400,
+	            height:400,
 	            marginLeft:-20,
 	            borderColor: '#7d7f6a'
 	        },

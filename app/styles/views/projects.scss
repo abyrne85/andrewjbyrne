@@ -3,18 +3,28 @@
 		padding-left: 0px;
 		width:800px;
 	}
-
 	li{
 		list-style: none;
 	}
 	img{
-		opacity:1;
 		cursor:pointer;
-		&:hover{
-			opacity:0.8;
-	        -webkit-transition: opacity 0.1s ease-in;
-	        transition: opacity 0.1s ease-in;
+		width:1005px;
+		height:275px;
+	}
+	/* Link text is showing up for some reason */
+	a{
+		line-height: 0; 
+	    font-size: 0;
+	    color: transparent; 
+	}
+	.Chordinate{
+		transition: background-image .5s ease-in-out;
+		background-image:url("../images/chordinate.jpg");
+ 		&:hover{
+ 			background-image:url("../images/chordinate-colored.jpg");
+ 		}
 
-	    }
 	}
 }
+
+
