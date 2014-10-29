@@ -1,11 +1,15 @@
 <div class="projects">
-	<ul ng-repeat="project in projects">
-	    <li>
+	<ul>
+	    <li ng-repeat="project in projects">
 	      	<h3>{{project.name}}</h3>
 	      	<div>
-	      		<a href="./assets/chordinate/"><img class="{{project.name}}" alt="{{project.name}}"></img></a>
-				<span>{{project.description}}</span>
-			</div>
+	      		<a class="projects-link" href="./assets/{{project.name}}"><img class="{{project.name}}  img-responsive" alt="{{project.name}}" src="{{project.image}}"></img></a>
+			</div>  
+		    <div class="span5 project-description">
+		    	<p>{{project.description}}</p>
+		    	<p><a href="{{project.github}}">Fork on Github</a></p>
+		    </div>
 	    </li>
 	</ul>
 </div>
+

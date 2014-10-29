@@ -18,6 +18,7 @@ angular
     'ngTouch'
   ])
   .config(function ($routeProvider) {
+
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
@@ -26,10 +27,10 @@ angular
       .when('/projects', {
         templateUrl: 'views/projects.html',
         controller: 'ProjectsCtrl'
-      })
+      })    
       .when('/contact',{
         templateUrl:'views/contact.html',
-        controller: 'ContactCtrl'
+        controller: 'ContactCtrl as ctrl'
       })
       .when('/about',{
         templateUrl:'views/about.html',
@@ -38,5 +39,7 @@ angular
       .otherwise({
         redirectTo: '/'
       });
+
+
   });
 

@@ -18,6 +18,5 @@ angular.module('andrewjbyrneApp')
     $http.get('./assets/social.json').success(function(data){
    		$scope.icons = data;
     });
-    
 
   });

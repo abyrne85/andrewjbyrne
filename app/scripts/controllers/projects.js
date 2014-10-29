@@ -22,7 +22,6 @@ angular.module('andrewjbyrneApp')
    			$scope.projects = data;
     	});
 
-
 	});
 
   

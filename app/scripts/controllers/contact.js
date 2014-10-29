@@ -14,4 +14,13 @@ angular.module('andrewjbyrneApp')
       'AngularJS',
       'Karma'
     ];
+
+    var self = this;
+
+    self.submit=function(){
+    	console.log('asdf');
+    };
+
+
+    
   });

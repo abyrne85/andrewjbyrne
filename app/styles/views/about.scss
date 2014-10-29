@@ -4,12 +4,15 @@
 	float:left;
 }
 .about-me{
-	width:600px;
+	max-width:600px;
 	float:left;
+	margin-bottom: 20px;
 
 }
 .chart{
 	width:450px;
-	float:right;
+	float:left;
 	margin-top: -20px;
+	margin-left:10px;
+
 }
