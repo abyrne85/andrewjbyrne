@@ -3,11 +3,15 @@
 	    <li ng-repeat="project in projects">
 	      	<h3>{{project.name}}</h3>
 	      	<div>
-	      		<a class="projects-link" href="./assets/{{project.name}}"><img class="{{project.name}}  img-responsive" alt="{{project.name}}" src="{{project.image}}"></img></a>
+<!-- 	        <a ng-show="linkDefined(project.link)" class="projects-link" href="{{project.link}}"> -->
+	      		<a class="projects-link" href="{{project.link}}">
+	      			<img class="{{project.name}}  img-responsive" alt="{{project.name}}" src="{{project.image}}"></img>
+	      		</a>
 			</div>  
 		    <div class="span5 project-description">
+		      	<h5>{{project.techDescription}}</h5>
 		    	<p>{{project.description}}</p>
-		    	<p><a href="{{project.github}}">Fork on Github</a></p>
+		    	<p ng-show="gitDefined(project.github)" ><a href="{{project.github}}">Fork on Github</a></p>
 		    </div>
 	    </li>
 	</ul>

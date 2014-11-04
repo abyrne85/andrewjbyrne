@@ -1,18 +1,15 @@
-//Media Queries
-$break-small: 320px;
-$break-large: 800px;
 
-//Colors
-$primary:#3f4035;
-$secondary: #7d7f6a;
-$white: #f8f8f8;
 
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 
+//Variables
+@import "_variables.scss";
 
+//Animations
+@import "_animations.scss";
 
 //partials CSS
 @import "views/projects.scss";
@@ -21,8 +18,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "views/contact.scss";
 
 
-
-//NAVIGATION
+//HEADER
 .header{
   a{
     color: $secondary;
@@ -31,21 +27,27 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
   background: $primary;
   height: 100px;
   font-size: 1.5rem;
-  .brand{
-    @media screen and (max-width: $break-large) {
-      display:none;
-    }
-    line-height: 1.7em;
-    cursor:pointer;
-    text-decoration: none;
-    float:left;
-    font-size: 2.5rem;
-    &:hover{
-      color: $white;
-      transition: color 0.5s ease-in;
-    }
-  }
 }
+//BRAND
+.brand{
+  @media screen and (max-width: $break-large) {
+    display:none;
+  }
+  line-height: 1.7em;
+  cursor:pointer;
+  text-decoration: none;
+  float:left;
+  font-size: 2.5rem;
+
+  &:hover{
+    color: $white;
+    transition: color 0.5s ease-in;
+    text-decoration: none;
+  }
+
+}
+
+//Navigation
 .nav{
   @media screen and (max-width: $break-large) {
     float:left;
@@ -57,7 +59,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
     cursor:pointer;
   }
   li a {
-      display: block;
+    display: block;
     &:hover {
         color: $white;
         transition: color 0.2s ease-in;
@@ -73,5 +75,15 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
   margin-bottom:100px;
   height:100%;
 }
+
+
+//UNDER CONSTRUCTION
+.under-construction {
+  margin: 0 auto;
+  width:380px;
+  text-align: center;
+}
+
+
 
 

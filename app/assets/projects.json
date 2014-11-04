@@ -1,14 +1,23 @@
 [
 	{
 		"name" 	 : "Chordinate",
+		"techDescription"	 : "Desktop Application using JS (with jQuery) and CSS (with Sass).",
 		"description": "This is an application shows a fretboard populated by all the notes in a given key.  It also highlights the fundamental intervals of a basic chord.  There is also the ability to change tunings while still showing all the notes of a scale. The aim of this application is to allow the user to visualise the fretboard so they can improvise freely while remaining in key",
 		"image"	 :  "./images/chordinate-colored.jpg",
-		"link" : "./assets/chordinate",
-		"github" : "https://github.com/abyrne85/chordinate"
+		"link" : "http://andrewjbyrne.com/assets/chordinate/app.html",
+		"github" : "https://github.com/abyrne85/chordinate/"
 	},
 	{
 		"name" 	 : "Hearing Loss Simulator",
+		"techDescription": "Java Application using JSYN and Flash",
 		"description": "This is an application I built for my masters thesis.  It is designed to simulate various degrees of hearing loss",
 		"image"	 :  "./images/hearing-loss.jpg"
+	},
+	{
+		"name" : "People and Culture",
+		"techDescription":"Wordpress Site",
+		"description":"This is a website for a Dublin based company specialising in buisiness and personal coaching",
+		"image":"./images/people-and-culture.jpg",
+		"link":"http://peopleandculture.ie"
 	}
 ]

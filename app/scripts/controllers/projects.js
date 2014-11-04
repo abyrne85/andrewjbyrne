@@ -18,9 +18,25 @@ angular.module('andrewjbyrneApp')
 	      'Karma'
 	    ];
 
+
+
    		$http.get('./assets/projects.json').success(function(data){
    			$scope.projects = data;
     	});
+
+   		$scope.gitDefined=function(value){
+   			return angular.isDefined(value);
+   		};
+
+   		$scope.linkDefined=function(value){
+
+   			if(angular.isDefined(value)){
+   				return true;
+   			}else{
+   				//Copy image and stick it back in the <li>
+
+   			}
+   		};
 
 	});
 

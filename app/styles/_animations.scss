@@ -1,0 +1,21 @@
+//Animation
+
+.slide.ng-leave { 
+  -webkit-transition: 200ms ease-in all;
+  display:block;
+  position:absolute;
+} /* starting animations for leave */
+.slide.ng-leave.ng-leave-active { 
+  right: 100%;
+} /* terminal animations for leave */
+
+
+.slide.ng-enter { 
+  -webkit-transition: 200ms ease-in all;
+  left:-100%; 
+  display:block;
+  position:absolute;
+}        /* starting animations for enter */
+.slide.ng-enter.ng-enter-active { 
+  left: 0;
+} /* terminal animations for enter */

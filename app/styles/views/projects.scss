@@ -1,22 +1,19 @@
+
+
 .projects{
 	div{
-		float:left;
+		// float:left;
 	}
 	ul{
 		padding-left: 0px;
 		width:1080px;
 	}
 	li{
+		margin-bottom: 30px;
 		list-style: none;
 		float:left;
 	}
 
-	/* Link text is showing up for some reason */
-	.projects-link{
-		line-height: 0; 
-	    font-size: 0;
-	    color: transparent; 
-	}
 	img{
 		transition: -webkit-filter .2s ease-in-out;
 		-webkit-filter:grayscale(100%);
@@ -25,6 +22,15 @@
  		}
 	}
 }
+
+/* Link text is showing up for some reason */
+.projects-link{
+	line-height: 0; 
+    font-size: 0;
+    color: transparent; 
+}
+
+
 .project-description{
 	height: 165px;
 	max-width: 42%;
@@ -32,5 +38,4 @@
 	margin-left: 10px;
 
 }
-
 
