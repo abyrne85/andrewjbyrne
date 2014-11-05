@@ -1,12 +1,13 @@
-
+$break-large: 800px;
 
 .projects{
 	div{
-		// float:left;
+		float:left;
+		height:inherit;
 	}
 	ul{
 		padding-left: 0px;
-		width:1080px;
+		width:100%;
 	}
 	li{
 		margin-bottom: 30px;
@@ -34,8 +35,10 @@
 .project-description{
 	height: 165px;
 	max-width: 42%;
-	/* position: absolute; */
 	margin-left: 10px;
+	@media screen and (max-width: $break-large) {
+    	max-width: 100%;
+  	}
 
 }
 

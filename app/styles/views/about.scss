@@ -1,3 +1,4 @@
+$break-large: 800px;
 
 
 .me-pic{
@@ -8,6 +9,9 @@
 	max-width:55%;
 	float:left;
 	margin-bottom: 20px;
+	@media screen and (max-width: $break-large) {
+    	max-width:100%;
+  	}
 
 }
 .chart{
@@ -16,6 +20,8 @@
 	margin-top: -20px;
 	margin-left:10px;
 
-
+	@media screen and (max-width: $break-large) {
+    	float: none;
+  	}
 
 }

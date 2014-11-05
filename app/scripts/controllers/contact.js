@@ -8,19 +8,23 @@
  * Controller of the andrewjbyrneApp
  */
 angular.module('andrewjbyrneApp')
-  .controller('ContactCtrl', function ($scope) {
+  .controller('ContactCtrl', function ($scope, $http) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
 
-    var self = this;
+    $scope.success = false;
+    $scope.error = false;
 
-    self.submit=function(){
-    	console.log('asdf');
+    $scope.submit = function () {
+
+    $http({
+        method  : 'POST',
+        url     : 'email.php',
+        data    : $scope.user,
+        headers : { 'Content-Type': 'application/x-www-form-urlencoded' }
+      });
     };
-
-
-    
-  });
+});
