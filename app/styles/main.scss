@@ -4,7 +4,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
-
+@import "compass/css3";
 //Variables
 @import "_variables.scss";
 
@@ -16,6 +16,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "views/about.scss";
 @import "views/footer.scss";
 @import "views/contact.scss";
+
 
 //General
 ::selection {

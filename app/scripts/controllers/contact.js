@@ -15,16 +15,25 @@ angular.module('andrewjbyrneApp')
       'Karma'
     ];
 
+
+
     $scope.success = false;
     $scope.error = false;
 
     $scope.submit = function () {
+      
+      $http({
+              method  : 'POST',
+              url     : 'email.php',
+              data    : $scope.user,  //param method from jQuery
+              headers : { 'Content-Type': 'application/x-www-form-urlencoded' }  //set the headers so angular passing info as form data (not request payload)
+          }).success(function(data){
+              if (data.success) { //success comes from the return json object
+                console.log('yay');
+              } else {
+                console.log('nay');
+              }
+          });
 
-    $http({
-        method  : 'POST',
-        url     : 'email.php',
-        data    : $scope.user,
-        headers : { 'Content-Type': 'application/x-www-form-urlencoded' }
-      });
     };
 });

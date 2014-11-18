@@ -1,44 +1,24 @@
-$break-large: 800px;
 
 .projects{
-	div{
-		float:left;
-		height:inherit;
-	}
-	ul{
-		padding-left: 0px;
+	padding-left: 0px;
+	float:left;
+	p{
 		width:100%;
-	}
-	li{
-		margin-bottom: 30px;
-		list-style: none;
-		float:left;
-	}
+		text-align: left;
+		margin-bottom: 10px;
+	  	background-color: $white;
+	  	@include transition(background-color 150ms ease-in);
+	    &:hover{
+	    	background-color: $secondary;
+	    	color:$white;
+	  	}
 
-	img{
-		transition: -webkit-filter .2s ease-in-out;
-		-webkit-filter:grayscale(100%);
- 		&:hover{
- 			-webkit-filter:grayscale(0%);
- 		}
-	}
-}
-
-/* Link text is showing up for some reason */
-.projects-link{
-	line-height: 0; 
-    font-size: 0;
-    color: transparent; 
+	}	
 }
 
 
 .project-description{
-	height: 165px;
-	max-width: 42%;
-	margin-left: 10px;
-	@media screen and (max-width: $break-large) {
-    	max-width: 100%;
-  	}
-
+	h2{
+		margin-top: 0px;
+	}
 }
-
