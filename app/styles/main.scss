@@ -12,10 +12,10 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "_animations.scss";
 
 //partials CSS
-@import "views/projects.scss";
-@import "views/about.scss";
-@import "views/footer.scss";
-@import "views/contact.scss";
+@import "views/_projects.scss";
+@import "views/_about.scss";
+@import "views/_footer.scss";
+@import "views/_contact.scss";
 
 
 //General

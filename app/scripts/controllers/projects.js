@@ -1,5 +1,4 @@
 'use strict';
-
 /**
  * @ngdoc function
  * @name andrewjbyrneApp.controller:ProjectsCtrl
@@ -12,35 +11,40 @@ angular.module('andrewjbyrneApp')
 
 
 	.controller('ProjectsCtrl', function ($scope, $http) {
-	     $scope.awesomeThings = [
-	      'HTML5 Boilerplate',
-	      'AngularJS',
-	      'Karma'
-	     ];
+       $scope.awesomeThings = [
+        'HTML5 Boilerplate',
+        'AngularJS',
+        'Karma'
+       ];
 
 
 
-   	  $http.get('./assets/projects.json').success(function(data){
-   			$scope.projects = data;
- 	       });
+ 	  $http.get('./assets/projects.json').success(function(data){
+ 			$scope.projects = data;
+	    });
 
 
-   		$scope.linkDefined=function(value){
-   			return angular.isDefined(value);
-   		};
+ 		$scope.linkDefined=function(value){
+ 			return angular.isDefined(value);
+ 		};
 
-   
+    $scope.open = function(item){
+      $scope.opened = item;
+    };
+          
+    $scope.anyItemOpen = function() {
+        return $scope.opened !== undefined;
+    };
+    
+    //Yay this guy 
+    //http://stackoverflow.com/questions/20902583/angularjs-best-practices-on-adding-an-active-class-on-click-ng-repeat
+     
+    $scope.selected = -1;
 
-       $scope.open = function(item){
-            $scope.opened = item;
-       };
-              
-       $scope.anyItemOpen = function() {
-            return $scope.opened !== undefined;
-       };
-       
+    $scope.select= function(index) {
+       $scope.selected = index; 
+    };
 
-
-	});
+  });
 
   

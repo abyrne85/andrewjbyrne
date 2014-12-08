@@ -1,11 +1,14 @@
 <div class="projects col-md-4">
 	<ul class="list-unstyled">
 	    <li ng-repeat="project in projects">
-
-	    	<p class="btn btn-default" ng-click="open(project)">{{project.name}}</p>
+	    	<p class="btn btn-default" ng-click="open(project); select($index)" ng-class=
+      "{selected: $index == selected}">
+          {{project.name}}
+        </p>
 	    </li>
 	</ul>
 </div>
+
 
 <div class="project-description col-md-8">
     <ng-switch on="anyItemOpen()">

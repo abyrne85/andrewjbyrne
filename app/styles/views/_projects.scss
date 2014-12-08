@@ -1,0 +1,27 @@
+
+.projects{
+	padding-left: 0px;
+	float:left;
+	p{
+		width:100%;
+		text-align: left;
+		margin-bottom: 10px;
+	  	background-color: $white;
+	  	@include transition(background-color 150ms ease-in);
+	    &:hover{
+	    	background-color: $secondary;
+	    	color:$white;
+	  	}
+	}
+	.selected{
+    	background-color: $secondary;
+	    color:$white;
+	}		
+}
+
+
+.project-description{
+	h2{
+		margin-top: 0px;
+	}
+}

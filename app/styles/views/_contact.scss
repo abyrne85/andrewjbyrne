@@ -1,0 +1,18 @@
+
+.contact-form{
+	max-width:50%;
+	@media screen and (max-width: $break-large) {
+    	max-width:100%;
+  	}
+  	textarea{
+  		margin-bottom: 15px;
+  	}
+}
+
+.form-control{
+	&:focus{
+	border:$secondary;
+	outline: 0;
+	box-shadow: inset 0 1px 1px $secondary, 0 0 8px $secondary;
+	}
+}
