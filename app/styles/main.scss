@@ -27,6 +27,11 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
   background: $primary; /* Gecko Browsers */
   color: $white;
 }
+html{
+  overflow-y:scroll;
+}
+
+
 
 //HEADER
 .header{
@@ -54,8 +59,11 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
   font-size: 2.5rem;
 
   &:hover{
-    color: $white;
-    transition: color 0.5s ease-in;
+    text-decoration: none;
+  }
+
+  &:focus{
+    outline: none;
     text-decoration: none;
   }
 

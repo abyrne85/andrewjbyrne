@@ -20,7 +20,19 @@ angular.module('andrewjbyrneApp')
     $scope.success = false;
     $scope.error = false;
 
+    // var nodemailer = require('nodemailer');
+    // var transporter = nodemailer.createTransport();
+
     $scope.submit = function () {
+
+
+
+
+      // transporter.sendMail({
+      //     from: $scope.user.email,
+      //     to: 'abyrne85@gmail.com',
+      //     text: $scope.user.message
+      // });
       
       $http({
               method  : 'POST',

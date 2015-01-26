@@ -8,6 +8,13 @@
 		"github" : "https://github.com/abyrne85/chordinate/"
 	},
 	{
+		"name" : "Sortable Lists",
+		"techDescription":"Angular Excercise",
+		"description":"Excercise in creating lists that can be arranged and sorted",
+		"link":"http://andrewjbyrne.com/sortable-list",
+		"github" : "https://github.com/abyrne85/sortable-list"
+	},
+	{
 		"name" 	 : "Hearing Loss Simulator",
 		"techDescription": "Java Application using JSYN and Flash",
 		"description": "This is an application I built for my masters thesis.  It is designed to simulate various degrees of hearing loss",
@@ -20,4 +27,5 @@
 		"image":"./images/people-and-culture.jpg",
 		"link":"http://peopleandculture.ie"
 	}
+
 ]

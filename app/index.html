@@ -19,11 +19,6 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-<?php
-echo 'HELLO';
-
-?>
-
     <!-- Add your site or application content here -->
     <div class="header">
       <div class="container">
@@ -32,7 +27,7 @@ echo 'HELLO';
           <li><a ng-href="#/projects">Projects</a></li>
           <li><a ng-href="#/contact">Contact</a></li>
         </ul>
-        <a ng-href="#" class="brand">Andrew <span class="j">j</span> Byrne</a>
+        <a ng-href="#" class="brand"><span class="brand-name">Andrew</span> j <span class="brand-name">Byrne</span></a>
       </div>
     </div>
 
@@ -100,6 +95,7 @@ echo 'HELLO';
     <script src="bower_components/highcharts-release/modules/exporting.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
+    <script src="bower_components/jquery-color/jquery.color.js"></script>
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
@@ -109,6 +105,8 @@ echo 'HELLO';
         <script src="scripts/controllers/about.js"></script>
         <script src="scripts/controllers/footer.js"></script>
 
+        <script src="scripts/controllers/onelist.js"></script>
+        <script src="scripts/services/highchartoptions.js"></script>
         <!-- endbuild -->
 </body>
 </html>

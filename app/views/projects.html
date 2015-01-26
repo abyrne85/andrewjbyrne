@@ -17,7 +17,7 @@
                <h5>{{opened.techDescription}}</h5>
 
                <p>{{opened.description}}</p>
-               <img src="{{opened.image}}"></img>
+               <img ng-show="linkDefined(opened.image)" src="{{opened.image}}"></img>
 
                 <p ng-show="linkDefined(opened.link)">
                     <a href="{{opened.link}}" target="_blank">View Project</a>    
