@@ -9,12 +9,7 @@
  */
 angular.module('andrewjbyrneApp')
   .controller('ContactCtrl', function ($scope, $http) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-
+    
 
 
     $scope.success = false;

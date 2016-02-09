@@ -6,18 +6,9 @@
  * # ProjectsCtrl
  * Controller of the andrewjbyrneApp
  */
-angular.module('andrewjbyrneApp')
-
-
-
-	.controller('ProjectsCtrl', function ($scope, $http) {
-       $scope.awesomeThings = [
-        'HTML5 Boilerplate',
-        'AngularJS',
-        'Karma'
-       ];
-
-
+angular.module('andrewjbyrneApp').controller('ProjectsCtrl', function ($scope, $http) {
+  
+    $scope.selected = -1;
 
  	  $http.get('./assets/projects.json').success(function(data){
  			$scope.projects = data;
@@ -39,7 +30,7 @@ angular.module('andrewjbyrneApp')
     //Yay this guy 
     //http://stackoverflow.com/questions/20902583/angularjs-best-practices-on-adding-an-active-class-on-click-ng-repeat
      
-    $scope.selected = -1;
+
 
     $scope.select= function(index) {
        $scope.selected = index; 

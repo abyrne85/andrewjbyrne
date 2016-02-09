@@ -9,12 +9,7 @@
  */
 angular.module('andrewjbyrneApp')
   .controller('AboutCtrl', function ($scope, Highchartoptions) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma',
-
-    ];
+ 
 
     var cssData ={
     	categories:['SASS','Responsive','Animations','Compass','Legacy'],

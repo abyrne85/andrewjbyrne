@@ -10,12 +10,7 @@
  */
 angular.module('andrewjbyrneApp')
   .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-
+    
 
 
     $('.brand').hover(
